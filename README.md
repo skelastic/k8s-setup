@@ -798,8 +798,3 @@ source ~/.k8slab_env
 multipass delete $(multipass list --format csv |tail -n +2 |grep $NODE_PREFIX | cut -d "," -f1 | xargs)
 multipass purge 
 ```
-
-## Feedback
-
-##### Hopefully this Guide was resourceful, informative and easier to follow. In upcoming tutorials, we will look at ArgoCD, CrossPlane and Auto cluster node scaling with builtin controller as well as Karpenter tool. 
-###### If you have any questions, Ask here [Discussions](https://github.com/sameerbagwe/k8sLabSetup/discussions) or message me on [LinkedIn](https://www.linkedin.com/in/sameer-bagwe/)
